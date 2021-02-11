@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /notfound.html
+Sitemap: https://lumoprod.ru/sitemap.xml

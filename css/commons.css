@@ -1,0 +1,247 @@
+body {
+	margin: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 100;
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+	position: fixed;
+	width: calc(100% - 60px);
+	height: 60px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	z-index: 10;
+}
+
+.header_logo {
+   height: 30px;
+}
+
+.header_block {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.header_btn {
+  margin-left: 30px;
+  font-family: pfddp;
+  font-size: 22px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.7);
+  transition: 0.2s;
+
+}
+
+.header_btn:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+.order {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order_block {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ordercomplete {
+  font-family: pfddpl;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+  color: rgba(0,0,0,0.7);
+}
+
+.order_img {
+  width: 100px;
+  height: 100px;
+}
+
+.order_text {
+  font-family: pfddpl;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+.order_label {
+  font-family: pfddpl;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.order_input {
+   border: none;
+   background-color: rgba(0,0,0,0);
+   margin: 10px 0px 10px 0px;
+   width: 300px;
+   border-width: 0px 0px 2px 0px;
+   border-bottom: 2px solid;
+   border-image: linear-gradient(120deg, #00b7ff 38%, #1bd7ff 65%);
+   border-image-slice: 1;
+   font-family: pfddp;
+   font-size: 20px;
+   color: rgba(0,0,0,0.7);
+}
+
+.order_btn {
+   width: 280px;
+   height: 60px;
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(150deg, #00b7ff 38%, #1bd7ff 65%);
+   background-clip: gradient;
+   border-radius: 20px;
+   color: white;
+   font-family: pfddp;
+   font-size: 18px;
+   transition: 0.2s;
+   cursor: pointer;
+}
+
+.order_btn:hover {
+   opacity: 0.7;
+}
+
+.order_closebtn {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ cursor: pointer;
+ width: 40px;
+ height: 40px;
+ padding: 0;
+ border: none;
+ background-color: rgba(0,0,0,0);
+ color: #bdbdbd;
+ transition: 0.2s;
+}
+
+.order_closebtn:hover {
+  color: red;
+}
+
+.footer {
+  position: relative;
+  margin: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 0px;
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-width: 2px 0px 0px 0px;
+  border-top: 2px solid;
+  border-image: linear-gradient(120deg, #00b7ff 38%, #1bd7ff 65%);
+  border-image-slice: 1;
+}
+
+.footer_icons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_icon {
+  width: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer_text {
+  width: 100%;
+  font-family: pfddpl;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  letter-spacing: 0px;
+}
+
+.footer_contacts {
+  text-align: center;
+  font-family: pfddpb;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px 5px 10px;
+}
+
+.footer_link {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer_link:hover {
+  opacity: 0.7;
+}
+
+@font-face {
+    font-family: pfddp;
+    src: url(../fonts/pfdindisplaypro.ttf);
+}
+
+@font-face {
+    font-family: pfddpb;
+    src: url(../fonts/pfdindisplaypro-bold.ttf);
+}
+
+@font-face {
+    font-family: pfddpl;
+    src: url(../fonts/pfdindisplaypro-light.ttf);
+}

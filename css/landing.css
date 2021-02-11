@@ -1,0 +1,142 @@
+.block1 {
+	position: relative;
+	padding: 15px;
+	width: calc(100% - 30px);
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  background-image: url(../img/block1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+.block1_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block1_container1 {
+   font-family: pfddpl;
+   font-size: 50px;
+   color: white;
+   letter-spacing: 3px;
+   line-height: 45px;
+   width: 450px;
+   flex-shrink: 0;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+@media (max-width: 880px) {
+    .block1 {
+        padding-top: 150px;
+    }
+    .block1_container1 {
+    	text-align: center;
+    }
+}
+
+.block1_container2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   padding-left: 15px;
+   padding-right: 15px;
+   height: 160px;
+}
+
+.block1_btn {
+   cursor: pointer;
+   opacity: 0.8;
+   width: 150px;
+   height: 150px;
+   transition: 0.2s;
+   border-radius: 50%;
+   animation: radial-pulse 1.2s 1s infinite;
+}
+
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+ 
+  100% {
+    box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+  }
+}
+
+.block1_btn:hover {
+   opacity: 1;
+   width: 160px;
+   height: 160px;
+}
+
+.block1_btn:active {
+   opacity: 1;
+   width: 150px;
+   height: 150px;
+}
+
+.block2 {
+	position: relative;
+	width: calc(100% - 30px);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 15px 10px 15px;
+}
+
+.block2_text {
+  font-family: pfddpl;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+}
+
+.block3 {
+	position: relative;
+	width: 100%;
+}
+
+.block4 {
+  position: relative;
+  width: calc(100% - 30px);
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px 10px 15px;
+}
+
+.block4_btn {
+  min-width: 100px;
+  font-family: pfddpl;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0,0,0,0.3);
+  transition: 0.2s;
+}
+
+.block4_btn:hover {
+   color: rgba(0,0,0,5);
+}
+
